@@ -1,21 +1,23 @@
+
 <template>
+  <div id="TopBar">
+    <TopBar></TopBar>
+  </div>
   <div id="app">
-    <router-view />
-  </div>  <!-- <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <router-view></router-view>
+  </div>
 </template>
 
-<script setup>
+<script >
+import TopBar from "./components/TopBar.vue";
 
+
+export default {
+  components: {
+    TopBar,
+  },
+};
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
 </style>

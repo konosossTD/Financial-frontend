@@ -1,14 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MainPage1 from '../views/MainPage1';
-import MainPage2 from '../views/MainPage2';
-import MainPage3 from '../views/MainPage3';
 import RegisterPage from '../views/RegisterPage.vue';
 import LoginPage from '../views/LoginPage.vue';
-
+import Stocks from "../views/Stocks.vue";
+import Funds from "../views/Funds.vue";
+import Assets from "../views/Assets.vue";
 const routes = [
   {
     path: '/',name: 'Home',
-    component: () => import('../views/HomePage.vue')
+    component: () => import('../views/MainPage.vue')
   },
   {
     path: '/Login',name: 'Login',
@@ -19,10 +18,11 @@ const routes = [
     component: () => import('../views/RegisterPage.vue')
   },
   {path: '/Login',component:LoginPage},
-  { path: '/RegisterPage', component: RegisterPage },
-  { path: '/MainPage1', component: MainPage1 },
-  { path: '/Main2age2', component: MainPage2 },
-  { path: '/MainPage3', component: MainPage3 },
+  { path: '/Register', component: RegisterPage },
+  { path: '/stocks', component: Stocks },
+  { path: '/funds', component: Funds },
+  { path: '/assets', component: Assets },
+
 ];
 
 
